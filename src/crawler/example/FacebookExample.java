@@ -10,7 +10,7 @@ import com.github.abola.crawler.CrawlerPack;
  * 資料探索練習 Facebook Graph Api Search 
  * 
  * 重點
- * 1. 利用Graph Api調整出需要的資料
+ * 1. 利用Graph Api調整出需要的資料, facebook practice
  * 2. 取得一組Access Token (試著使用 long term token)
  * 3. 試著用『excel』或任何最簡易的方式，對資料進行探索
  * 
@@ -27,7 +27,7 @@ public class FacebookExample {
 		String uri = 
 				"https://graph.facebook.com/v2.5"
 				+ "/search?q=%E9%9D%A0%E5%8C%97&type=page&limit=1000&fields=name,id,likes,talking_about_count"
-				+ "&access_token=EAACEdEose0cBAMzLyMlMxZAY73J1TBiZAHJhrF8du8fLhMmGYrUA3W9ezJDQk9oZAa07o4F2drZAL2k1cCtgdpl5LZClZCo6733A3xddNbjSAoTxEZBWY4rKnzLWTU3I0KMgT0qsw6eIRfdzg9RZCIkuTZCtGZCyzct657fywQpsFCNAZDZD";
+				+ "&access_token=EAACEdEose0cBAD4ycFXgiPZBVBalnaf3kqKGO4CfE3BZAnzm9y1rZAZCNFYbVbsm6KSg27We6OZCweZC6i5wTrJI8LGPEtCgZAl5SAPGvcp8oTKHZCDgYYJpq40trcY4HnJB7MMQpmB9bV6WJNuB2kd4a6EEfWTdnYY9d8JaN2193VYa1ynQF8t0xYzszviZClqUZD";
 
 
 
