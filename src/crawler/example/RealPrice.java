@@ -8,7 +8,7 @@ import org.jsoup.nodes.Element;
  * 練習： 實價登錄資料取得
  * 
  * 重點
- * 1. 練習找出實價登錄公開資料源
+ * 1. 練習找出實價登錄公開資料源, My 4th protice of web crawler
  * 2. zip 格式資料如何取出指定檔案
  * 3. 爬蟲包可解析中文TagName，試著使用看看
  * 
@@ -18,9 +18,8 @@ import org.jsoup.nodes.Element;
 public class RealPrice {
 	public static void main(String[] args) {
 		
-		String uri = "zip:http://plvr.land.moi.gov.tw"
-				+ "/Download?type=zip&fileName=lvr_landxml.zip"
-				+ "!/A_LVR_LAND_A.XML";
+		String uri = "zip:http://plvr.land.moi.gov.tw//Download?type=zip&fileName=lvr_landxml.zip!/E_LVR_LAND_A.XML";
+
 
 
 		Document jsoupDoc = CrawlerPack.start()
