@@ -24,10 +24,10 @@ public class FacebookExam {
 		// 遠端資料路徑
 
 		String uri = 
-				"https://graph.facebook.com/v2.6"
-				+ "/search?q="
-				+ "&access_token=";
-
+				"https://graph.facebook.com/v2.11"
+				+ "/judgead/posts?fields=id,link,message,created_time,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
+				+ "&access_token=EAACEdEose0cBAFNPLkCCwl83etZAThM55MfVBN4KDzfLM61LZC3LH2XZCVKi9vcQ6usTkQXQXnHI9LabrnZBVKZBWvVUvyOkBh603On4yiMzW7efJIxP1uTvMD9NKzDjrk4sniwfco7qasAOhrnhZAZBbTHO1avszRZCuZA0GXkuZCZAimPcNI4WpQlLMJTU4473SUZD";
+		//
 
 		Elements elems =
 				CrawlerPack.start()
@@ -41,7 +41,7 @@ public class FacebookExam {
 			String id = data.select("id").text();
 
 			// FIXIT
-			String reactions = "";
+			String reactions = data.select("reactions summary total_count").text();
 
 
 			output += id + "," + reactions + "\n";
